@@ -1,0 +1,375 @@
+[
+  {
+    "jobKey": "ca3e362d5b2d4c73",
+    "scrapingInfo": {
+      "page": 1,
+      "index": 3
+    },
+    "title": "Software Developer",
+    "jobType": [
+      "Full-time"
+    ],
+    "descriptionHtml": "<div><p>TTM Technologies, Inc. &ndash; Publicly Traded US Company, NASDAQ (TTMI) &ndash; Top-5 Global Printed Circuit Board Manufacturer\n</p><p></p><h2 class=\"jobSectionHeader\"><b>About TTM<br>\n</b></h2><p><br>\nTTM Technologies, Inc. is a leading global manufacturer of technology products, including mission systems, radio frequency (&ldquo;RF&rdquo;) components, RF microwave/microelectronic assemblies, and technologically advanced printed circuit boards (&ldquo;PCB&rdquo;s). TTM stands for time-to-market, representing how TTM's time-critical, one-stop design, engineering and manufacturing services enable customers to reduce the time required to develop new products and bring them to market .\n</p><p></p><p>Additional information can be found at www.ttm.com\n</p><p></p><p><b><i>Job Description\n</i></b></p><p>We are seeking a software developer with a minimum of five years of development experience to fill an in-house position related software development for Front End Engineering automation solutions. The primary responsibilities of this job include analysis, design, programming, debugging, and modification of software and/or new products used in local, networked, cloud-based or Internet-related computer programs. Using current programming language and technologies, writes code, completes programming, and performs testing and debugging of applications. Completes documentation and procedures for installation and maintenance. May interact with users to define system requirements and/or necessary.\n</p><p></p><p>This is a remote position with up to 50% travel required.\n</p><p></p><p><b><i>Key Duties and Responsibilities:\n</i></b></p><ul><li>Follow current SW development processes\n</li><li>Design and architect end-to-end data solutions spanning multiple data domains and business units\n</li><li>Evaluate and implement new features and capabilities to improve platform maturity\n</li><li>Perform tasks according to budget and schedule\n</li><li>Uses computer assisted engineering and design software and equipment to perform engineering tasks\n</li><li>Prepares status reports, as required.\n</li><li>Review, implement and document manufacturing and process engineering requirements.\n</li><li>Provide Software development support to Pre-Production Engineering.\n</li><li>Communicate with software provider to drive improvements and solve problems with the application.\n</li><li>Continually improve the quality, workflow, and throughput of the tooling and data distribution processes. Work directly with tooling groups, engineering groups, vendors, etc.&hellip;to identify improvements and to implement new changes.\n</li><li>Actively ensure that all business objectives are met in the areas of quality, productivity, cost, delivery and capacity.\n</li><li>Provide assistance and leadership with integration of new systems and software(s), including the implementation of new SW revisions into the production environment.\n</li><li>Exercise judgment and sense of urgency in reacting to constantly changing business needs and daily unplanned demand.\n</li><li>Continuous improvement &ndash;Actively drive process improvement activities and emphasizes training and documentation to improve overall process flow and quality.\n</li></ul><p></p><p><b><i>Essential Knowledge and Skills </i></b><b>:\n</b></p><ul><li>Familiar with CI/CD pipelines\n</li><li>Experience in object-oriented design methodology\n</li><li>Experience with full SW development life cycle\n</li><li>Must be able to work effectively in a cross-function environment between the development team, project manager, business analyst and the engineering staff using the tools.\n</li><li>Must be able to adapt to changing conditions such as business requirements where code structures may be refactoring\n</li><li>General understanding a LLM and ML technologies and techniques to take advantage in a development environment.\n</li><li>Disciplined in documenting code and requirements\n</li></ul><p></p><p><b><i>Education and Experience\n</i></b></p><ul><li>Minimum 5+ Years Relevant Experience\n</li><li>Bachelor&rsquo;s degree in computer science or computer engineering\n</li><li>Experience in Python, SQL and TypeScript programming languages\n</li><li>Must have excellent communication skills, both verbal and written\n</li></ul><h2 class=\"jobSectionHeader\"><br>\n<b><i>Compensation and Benefits:\n</i></b></h2><p>TTM offers a variety of health and well-being benefit programs. Benefit options include medical, dental, vision, 401K, Flexible Spending Account, Health Savings Account, accident benefits, life insurance, disability benefits, paid vacation &amp; holidays. Benefits are available 1st of the month following date of hire.<br>\n</p><p><br>\nCompensation for roles at TTM Technologies varies depending on a wide array of factors including but not limited to the specific office location, role, skill set and level of experience. As required by local law, TTM provides a reasonable range of compensation for roles that my be hired in New York, California and Colorado. For California-based roles, compensation ranges are based upon specific physical locations.\n</p><p></p><p><b><i>Export Statement:\n</i></b><br>\nMust comply with TTM Export Control Policies and Procedures and all applicable laws including ITAR, EAR and OFAC including but not limited to: a) being able to identify ITAR product on the manufacturing floor and understand that access to these products and related technical data is restricted to only US Citizens and US Permanent Residents; b) recognition of Foreign Person visitors by badge differentiation; c) understand and follow authorization procedures for bringing foreign visitors into facilities (VAL); d) understand the Export and ITAR requirements for shipments leaving the US; e) manage vendor approvals for ITAR manufacturing and services.\n</p><p></p><p>All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, citizenship, disability or protected veteran status.</p></div>",
+    "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/48331fe901899517f0c31abc5401604e",
+    "descriptionText": "TTM Technologies, Inc. – Publicly Traded US Company, NASDAQ (TTMI) – Top-5 Global Printed Circuit Board Manufacturer\n\nAbout TTM\n\nTTM Technologies, Inc. is a leading global manufacturer of technology products, including mission systems, radio frequency (“RF”) components, RF microwave/microelectronic assemblies, and technologically advanced printed circuit boards (“PCB”s). TTM stands for time-to-market, representing how TTM's time-critical, one-stop design, engineering and manufacturing services enable customers to reduce the time required to develop new products and bring them to market .\n\nAdditional information can be found at www.ttm.com\n\nJob Description\n\nWe are seeking a software developer with a minimum of five years of development experience to fill an in-house position related software development for Front End Engineering automation solutions. The primary responsibilities of this job include analysis, design, programming, debugging, and modification of software and/or new products used in local, networked, cloud-based or Internet-related computer programs. Using current programming language and technologies, writes code, completes programming, and performs testing and debugging of applications. Completes documentation and procedures for installation and maintenance. May interact with users to define system requirements and/or necessary.\n\nThis is a remote position with up to 50% travel required.\n\nKey Duties and Responsibilities:\n\nFollow current SW development processes\nDesign and architect end-to-end data solutions spanning multiple data domains and business units\nEvaluate and implement new features and capabilities to improve platform maturity\nPerform tasks according to budget and schedule\nUses computer assisted engineering and design software and equipment to perform engineering tasks\nPrepares status reports, as required.\nReview, implement and document manufacturing and process engineering requirements.\nProvide Software development support to Pre-Production Engineering.\nCommunicate with software provider to drive improvements and solve problems with the application.\nContinually improve the quality, workflow, and throughput of the tooling and data distribution processes. Work directly with tooling groups, engineering groups, vendors, etc.…to identify improvements and to implement new changes.\nActively ensure that all business objectives are met in the areas of quality, productivity, cost, delivery and capacity.\nProvide assistance and leadership with integration of new systems and software(s), including the implementation of new SW revisions into the production environment.\nExercise judgment and sense of urgency in reacting to constantly changing business needs and daily unplanned demand.\nContinuous improvement –Actively drive process improvement activities and emphasizes training and documentation to improve overall process flow and quality.\n\nEssential Knowledge and Skills :\n\nFamiliar with CI/CD pipelines\nExperience in object-oriented design methodology\nExperience with full SW development life cycle\nMust be able to work effectively in a cross-function environment between the development team, project manager, business analyst and the engineering staff using the tools.\nMust be able to adapt to changing conditions such as business requirements where code structures may be refactoring\nGeneral understanding a LLM and ML technologies and techniques to take advantage in a development environment.\nDisciplined in documenting code and requirements\n\nEducation and Experience\n\nMinimum 5+ Years Relevant Experience\nBachelor’s degree in computer science or computer engineering\nExperience in Python, SQL and TypeScript programming languages\nMust have excellent communication skills, both verbal and written\n\nCompensation and Benefits:\n\nTTM offers a variety of health and well-being benefit programs. Benefit options include medical, dental, vision, 401K, Flexible Spending Account, Health Savings Account, accident benefits, life insurance, disability benefits, paid vacation & holidays. Benefits are available 1st of the month following date of hire.\n\nCompensation for roles at TTM Technologies varies depending on a wide array of factors including but not limited to the specific office location, role, skill set and level of experience. As required by local law, TTM provides a reasonable range of compensation for roles that my be hired in New York, California and Colorado. For California-based roles, compensation ranges are based upon specific physical locations.\n\nExport Statement:\nMust comply with TTM Export Control Policies and Procedures and all applicable laws including ITAR, EAR and OFAC including but not limited to: a) being able to identify ITAR product on the manufacturing floor and understand that access to these products and related technical data is restricted to only US Citizens and US Permanent Residents; b) recognition of Foreign Person visitors by badge differentiation; c) understand and follow authorization procedures for bringing foreign visitors into facilities (VAL); d) understand the Export and ITAR requirements for shipments leaving the US; e) manage vendor approvals for ITAR manufacturing and services.\n\nAll qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, citizenship, disability or protected veteran status.",
+    "companyName": "TTM Technologies",
+    "companyUrl": "https://www.indeed.com/cmp/Ttm-Technologies",
+    "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/5834f54c1bbb9460c9a1698856a9f7a7",
+    "location": {
+      "city": "Remote",
+      "postalCode": null,
+      "country": "United States",
+      "countryCode": "US",
+      "formattedAddressLong": "Remote",
+      "formattedAddressShort": "Remote",
+      "latitude": 25,
+      "longitude": -40,
+      "streetAddress": null,
+      "fullAddress": "Remote"
+    },
+    "salary": {},
+    "rating": {
+      "rating": 3,
+      "count": 630
+    },
+    "benefits": [
+      "Health savings account",
+      "Paid holidays",
+      "Disability insurance",
+      "Health insurance",
+      "Dental insurance",
+      "401(k)",
+      "Flexible spending account",
+      "Vision insurance",
+      "Life insurance"
+    ],
+    "occupation": [
+      "Software Development Occupations",
+      "Technology Occupations",
+      "Software Development & Architecture Occupations"
+    ],
+    "attributes": [
+      "Project reporting",
+      "Application Integration",
+      "Computer science",
+      "Computer Science",
+      "Requirements specification",
+      "Up to 50% travel",
+      "Continuous Delivery (CD) implementation",
+      "Health savings account",
+      "Automation",
+      "Software coding",
+      "5 years",
+      "Paid holidays",
+      "Software implementation",
+      "System design",
+      "Engineering process optimization",
+      "Full-time",
+      "Disability insurance",
+      "Trade compliance",
+      "Health insurance",
+      "SQL",
+      "Dental insurance",
+      "401(k)",
+      "Technical solutions implementation",
+      "Flexible spending account",
+      "Data Architecture Design (Architecture design skills)",
+      "Solution architecture design",
+      "Bachelor's degree",
+      "Cloud-based systems",
+      "Machine learning",
+      "Continuous improvement",
+      "Application design",
+      "Travel",
+      "Computer Engineering",
+      "Software documentation",
+      "Software testing",
+      "Experience equivalent to degree accepted",
+      "Vision insurance",
+      "In-person",
+      "Analysis (software development lifecycle)",
+      "Senior level",
+      "Cross-functional collaboration",
+      "Bachelor's degree in computer science",
+      "TypeScript",
+      "Communication skills",
+      "Python",
+      "International trade regulations",
+      "Life insurance",
+      "Cross-functional communication"
+    ],
+    "contacts": [],
+    "shifts": [],
+    "socialInsurance": [
+      "Health insurance"
+    ],
+    "workingSystem": [],
+    "shiftAndSchedule": [],
+    "postedToday": true,
+    "hiringDemand": {
+      "isHighVolumeHiring": false,
+      "isUrgentHire": false
+    },
+    "datePublished": "2026-02-10",
+    "expired": false,
+    "source": "TTM Technologies",
+    "age": "6 hours ago",
+    "isRemote": false,
+    "locale": "us",
+    "language": "en",
+    "jobUrl": "https://www.indeed.com/viewjob?jk=ca3e362d5b2d4c73",
+    "applyUrl": "https://ttmtech.wd5.myworkdayjobs.com/en-US/jobs/job/Remote---USA/Software-Developer_R14500",
+    "emails": [
+      "found@www.ttm.com"
+    ],
+    "companyAddresses": [
+      "Santa Ana, CA"
+    ],
+    "companyNumEmployees": "10,000+",
+    "companyRevenue": "$1B to $5B (USD)",
+    "companyDescription": "At TTM we are inspiring innovation in everything we do. We pride ourselves on being a leading global provider of technology solutions encompassing mission systems, radio frequency (“RF”) components, RF microwave, microelectronic assemblies, quick-turn and technologically advanced printed circuit boards (“PCB”s). A career at TTM, will allow you to work in a fast-paced, highly technical environment supporting a wide range of business sectors.\n\nOur name, TTM, which stands for time-to-market, underscores our commitment to accelerating the product development process for our clients. By offering time-critical, one-stop manufacturing services, we empower our customers to significantly reduce the time needed to innovate and launch new products, ensuring they stay ahead in today's fast-paced market. \n\nTTM Technologies is an Equal Employment Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, citizenship, disability or protected veteran status.\n",
+    "companyFounded": {
+      "year": 1978
+    },
+    "companyBriefDescription": "At TTM, you can be part of a company built upon honesty, integrity, performance and clear communication.",
+    "companyLinks": {
+      "facebook": "https://www.facebook.com/ttmtech/",
+      "instagram": null,
+      "twitter": "https://twitter.com/ttm_tech",
+      "customLinks": [],
+      "corporateWebsite": "http://www.ttmtech.com"
+    },
+    "companyCeo": {
+      "name": "Thomas T. Edman",
+      "photoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_ceophoto/512x512/5740adc7b253fa8ce471662f64f6b835",
+      "startDate": null
+    },
+    "requirements": []
+  },
+  {
+    "jobKey": "080269cf715cee4a",
+    "scrapingInfo": {
+      "page": 1,
+      "index": 0
+    },
+    "title": "Senior Software Engineer",
+    "jobType": [
+      "Part-time"
+    ],
+    "descriptionHtml": "<p>We are seeking experienced Software Engineers to contribute to projects across a wide range of technologies and programming languages, including JavaScript, Python, Go, C++, Ruby, and more.<br/>This is an open-ended contract opportunity, structured around project-based work with no set schedules or minimum time or task commitments. Contributors who work with us decide which available projects they'd like to work on, when they work, and how much they contribute, which makes it an excellent option for those seeking flexible and high-impact work.<br/>In this role, you will help advance AI research by understanding complex systems, exploring large codebases, and developing approaches to verify the correctness of software behavior.</p><p><b>Compensation</b></p><ul><li>$70 per hour after passing the qualification</li><li>Fully remote</li><li>Project based work, no minimum time or task commitments</li></ul><p><b>Responsibilities</b></p><ul><li>Rapidly build context in large, multi-module codebases</li><li>Analyze feature implementations for correctness and edge cases</li><li>Produce clear, structured documentation of findings and rationale</li></ul><p><b>Requirements</b></p><ul><li>Bachelor's degree in Computer Science or a related field</li><li>At least 2 years of experience as a Software Engineer</li><li>Excellent written communication skills</li><li>Ability to clearly explain complex technical concepts</li></ul><p><b>Location</b><br/>Remote in the US, UK, Canada, Mexico, South America, Europe, Australia, or New Zealand</p><p>Job Type: Part-time</p><p>Pay: From $70.00 per hour</p><p>Work Location: Remote</p>",
+    "descriptionText": "We are seeking experienced Software Engineers to contribute to projects across a wide range of technologies and programming languages, including JavaScript, Python, Go, C++, Ruby, and more.\nThis is an open-ended contract opportunity, structured around project-based work with no set schedules or minimum time or task commitments. Contributors who work with us decide which available projects they'd like to work on, when they work, and how much they contribute, which makes it an excellent option for those seeking flexible and high-impact work.\nIn this role, you will help advance AI research by understanding complex systems, exploring large codebases, and developing approaches to verify the correctness of software behavior.\n\n*Compensation*\n\n* $70 per hour after passing the qualification\n* Fully remote\n* Project based work, no minimum time or task commitments\n\n*Responsibilities*\n\n* Rapidly build context in large, multi-module codebases\n* Analyze feature implementations for correctness and edge cases\n* Produce clear, structured documentation of findings and rationale\n\n*Requirements*\n\n* Bachelor's degree in Computer Science or a related field\n* At least 2 years of experience as a Software Engineer\n* Excellent written communication skills\n* Ability to clearly explain complex technical concepts\n\n*Location*\nRemote in the US, UK, Canada, Mexico, South America, Europe, Australia, or New Zealand\n\nJob Type: Part-time\n\nPay: From $70.00 per hour\n\nWork Location: Remote",
+    "companyName": "Stellar AI",
+    "companyUrl": "https://www.indeed.com/cmp/Stellar-Ai",
+    "location": {
+      "city": "Remote",
+      "postalCode": null,
+      "country": "United States",
+      "countryCode": "US",
+      "formattedAddressLong": "Remote",
+      "formattedAddressShort": "Remote",
+      "latitude": 25,
+      "longitude": -40,
+      "streetAddress": null,
+      "fullAddress": "Remote"
+    },
+    "salary": {
+      "salaryCurrency": "USD",
+      "salarySource": "EXTRACTION",
+      "salaryText": "From $70 an hour",
+      "salaryType": "hourly"
+    },
+    "rating": {
+      "rating": 0,
+      "count": 0
+    },
+    "benefits": [],
+    "occupation": [
+      "Software Development Occupations",
+      "Technology Occupations",
+      "Software Development & Architecture Occupations"
+    ],
+    "attributes": [
+      "Go",
+      "Computer Science",
+      "Part-time",
+      "Technical documentation",
+      "Software coding",
+      "Research",
+      "Mid-level",
+      "Remote",
+      "Programming languages",
+      "C++",
+      "Bachelor's degree",
+      "JavaScript",
+      "Ruby",
+      "AI",
+      "Bachelor's degree in computer science",
+      "2 years",
+      "Communication skills",
+      "Python"
+    ],
+    "contacts": [],
+    "shifts": [],
+    "socialInsurance": [],
+    "workingSystem": [],
+    "shiftAndSchedule": [],
+    "postedToday": false,
+    "hiringDemand": {
+      "isHighVolumeHiring": false,
+      "isUrgentHire": false
+    },
+    "datePublished": "2025-10-21",
+    "expired": false,
+    "source": "Indeed",
+    "age": "4 months ago",
+    "isRemote": true,
+    "locale": "us",
+    "language": "en",
+    "jobUrl": "https://www.indeed.com/viewjob?jk=080269cf715cee4a",
+    "emails": [],
+    "companyAddresses": [],
+    "companyLinks": {
+      "facebook": null,
+      "instagram": null,
+      "twitter": null,
+      "customLinks": [],
+      "corporateWebsite": null
+    },
+    "companyCeo": {
+      "name": null,
+      "photoUrl": null,
+      "startDate": null
+    },
+    "numOfCandidates": null,
+    "requirements": [
+      {
+        "label": "Bachelor's degree",
+        "requirementSeverity": "REQUIRED"
+      },
+      {
+        "label": "Programming languages",
+        "requirementSeverity": "REQUIRED"
+      }
+    ]
+  },
+  {
+    "jobKey": "66edb2a9943ff902",
+    "scrapingInfo": {
+      "page": 1,
+      "index": 1
+    },
+    "title": "Software Engineer (L4) - Resilience Engineering",
+    "jobType": [
+      "Full-time"
+    ],
+    "descriptionHtml": "<div><p>At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what&rsquo;s next.\n</p><p></p><p><b>Who we are\n</b></p><p>Resilience Engineering&rsquo;s purpose is to help other teams at Netflix understand the outcome of a change (e.g. a code change), before they are deployed to production.\n</p><p></p><p>Our tools help teams build confidence that their services will perform as expected when changes are introduced, while also providing early insights into any unintended consequences, such as increased error rates or latency, that could affect the Netflix experience for our users.\n</p><p></p><p>A majority of critical services leverage our platform and tooling to confidently and safely deliver changes to production on a day to day basis.\n</p><p></p><p>You can learn more about what we do from the Evolution of Chaos presentation.\n</p><p></p><p><b>Where we work\n</b></p><p>We are a distributed team, with members working both remotely and near Netflix offices. We collaborate asynchronously and meet in person quarterly.\n</p><p></p><p><b>What you could work on\n</b></p><p>We have two major focuses that you could work on in 2026:\n</p><ul><li><p>Expand our canary approach to new use cases, including libraries and functions.\n</p></li><li><p>Increase confidence that Netflix&rsquo;s most critical applications are resilient under different expected and unexpected conditions.\n</p></li></ul><p></p><p>Some of the larger initiatives we will be focusing on are:\n</p><ul><li><p>Extending canaries to effectively support use cases where a single change needs to be validated across a large number of targets (e.g. library changes).\n</p></li><li><p>Expanding canary support to new resource types, like functions.\n</p></li><li><p>Scaling out chaos testing to recurrently validate fallback behaviour on behalf of application owners.\n</p></li></ul><p></p><p><b>About you\n</b></p><ul><li><p>You are curious and enjoy solving ambiguous, open-ended problems.\n</p></li><li><p>You collaborate effectively across teams, using communication skills to influence product direction.\n</p></li><li><p>You are product-focused, driving the ideation, design, development, and implementation to turn user&rsquo;s pain-points into simple and elegant solutions.\n</p></li><li><p>You have experience to distributed systems including how to debug them and how they can fail.\n</p></li></ul><p></p>Generally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $250,000.00 - $413,000.00. This compensation range will vary based on location.\n<p></p><p>Netflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here .\n</p><p></p><p>Netflix is a unique culture and environment. Learn more here .\n</p><p></p><p>Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.\n</p><p></p><p>We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.\n</p><p></p><p>Job is open for no less than 7 days and will be removed when the position is filled.</p></div>",
+    "companyLogoUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/d5553f0897d238145e9d8b9573e3c478",
+    "descriptionText": "At Netflix, our mission is to entertain the world. Together, we are writing the next episode - pushing the boundaries of storytelling, global fandom and making the unimaginable a reality. We are a dream team obsessed with the uncomfortable excitement of discovering what happens when you merge creativity, intuition and cutting-edge technology. Come be a part of what’s next.\n\nWho we are\n\nResilience Engineering’s purpose is to help other teams at Netflix understand the outcome of a change (e.g. a code change), before they are deployed to production.\n\nOur tools help teams build confidence that their services will perform as expected when changes are introduced, while also providing early insights into any unintended consequences, such as increased error rates or latency, that could affect the Netflix experience for our users.\n\nA majority of critical services leverage our platform and tooling to confidently and safely deliver changes to production on a day to day basis.\n\nYou can learn more about what we do from the Evolution of Chaos presentation.\n\nWhere we work\n\nWe are a distributed team, with members working both remotely and near Netflix offices. We collaborate asynchronously and meet in person quarterly.\n\nWhat you could work on\n\nWe have two major focuses that you could work on in 2026:\n\nExpand our canary approach to new use cases, including libraries and functions.\n\nIncrease confidence that Netflix’s most critical applications are resilient under different expected and unexpected conditions.\n\nSome of the larger initiatives we will be focusing on are:\n\nExtending canaries to effectively support use cases where a single change needs to be validated across a large number of targets (e.g. library changes).\n\nExpanding canary support to new resource types, like functions.\n\nScaling out chaos testing to recurrently validate fallback behaviour on behalf of application owners.\n\nAbout you\n\nYou are curious and enjoy solving ambiguous, open-ended problems.\n\nYou collaborate effectively across teams, using communication skills to influence product direction.\n\nYou are product-focused, driving the ideation, design, development, and implementation to turn user’s pain-points into simple and elegant solutions.\n\nYou have experience to distributed systems including how to debug them and how they can fail.\n\nGenerally, our compensation structure consists solely of an annual salary; we do not have bonuses. You choose each year how much of your compensation you want in salary versus stock options. To determine your personal top of market compensation, we rely on market indicators and consider your specific job family, background, skills, and experience to determine your compensation in the market range. The range for this role is $250,000.00 - $413,000.00. This compensation range will vary based on location.\n\nNetflix provides comprehensive benefits including Health Plans, Mental Health support, a 401(k) Retirement Plan with employer match, Stock Option Program, Disability Programs, Health Savings and Flexible Spending Accounts, Family-forming benefits, and Life and Serious Injury Benefits. We also offer paid leave of absence programs. Full-time hourly employees accrue 35 days annually for paid time off to be used for vacation, holidays, and sick paid time off. Full-time salaried employees are immediately entitled to flexible time off. See more details about our Benefits here .\n\nNetflix is a unique culture and environment. Learn more here .\n\nInclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.\n\nWe are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.\n\nJob is open for no less than 7 days and will be removed when the position is filled.",
+    "companyName": "Netflix",
+    "companyUrl": "https://www.indeed.com/cmp/Netflix",
+    "companyHeaderUrl": "https://d2q79iu7y748jz.cloudfront.net/s/_headerimage/1960x400/926640e400179f34c0a81c895d24939d",
+    "location": {
+      "city": "Remote",
+      "postalCode": null,
+      "country": "United States",
+      "countryCode": "US",
+      "formattedAddressLong": "Remote",
+      "formattedAddressShort": "Remote",
+      "latitude": 25,
+      "longitude": -40,
+      "streetAddress": null,
+      "fullAddress": "Remote"
+    },
+    "salary": {
+      "salaryCurrency": "USD",
+      "salaryMax": 413000,
+      "salaryMin": 250000,
+      "salarySource": "EXTRACTION",
+      "salaryText": "$250,000 - $413,000 a year",
+      "salaryType": "yearly"
+    },
+    "rating": {
+      "rating": 4,
+      "count": 840
+    },
+    "benefits": [
+      "Stock options",
+      "Paid holidays",
+      "Health insurance",
+      "Flexible spending account",
+      "Paid time off",
+      "401(k) matching"
+    ],
+    "occupation": [
+      "Software Development Occupations",
+      "Back End Developers",
+      "Technology Occupations",
+      "Software Development & Architecture Occupations"
+    ],
+    "attributes": [
+      "Stock options",
+      "Paid holidays",
+      "Full-time",
+      "Yearly pay",
+      "Mid-level",
+      "Host/hostess experience",
+      "Health insurance",
+      "Flexible spending account",
+      "Product development",
+      "Paid time off",
+      "Distributed systems",
+      "401(k) matching",
+      "Distributed computing",
+      "Cross-functional collaboration",
+      "Communication skills",
+      "Debugging",
+      "Cross-functional communication"
+    ],
+    "contacts": [],
+    "shifts": [],
+    "socialInsurance": [
+      "Health insurance"
+    ],
+    "workingSystem": [],
+    "shiftAndSchedule": [],
+    "postedToday": false,
+    "hiringDemand": {
+      "isHighVolumeHiring": false,
+      "isUrgentHire": false
+    },
+    "datePublished": "2026-01-23",
+    "expired": false,
+    "source": "Netflix",
+    "age": "18 days ago",
+    "isRemote": false,
+    "locale": "us",
+    "language": "en",
+    "jobUrl": "https://www.indeed.com/viewjob?jk=66edb2a9943ff902",
+    "emails": [],
+    "companyIndustry": "MEDIA_NEWS_AND_PUBLISHING",
+    "companyAddresses": [
+      "121 Albright Way\r\nLos Gatos, CA 95032, USA\r\n\r\n"
+    ],
+    "companyNumEmployees": "5,001 to 10,000",
+    "companyRevenue": "more than $10B (USD)",
+    "companyDescription": "Netflix is one of the world's leading entertainment services, with over 300 million paid memberships in over 190 countries enjoying TV series, films and games across a wide variety of genres and languages. Members can play, pause and resume watching as much as they want, anytime, anywhere, and can change their plans at any time.\r\n",
+    "companyFounded": {
+      "year": 1997
+    },
+    "companyBriefDescription": "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.",
+    "companyLinks": {
+      "facebook": "https://www.facebook.com/wearenetflix",
+      "instagram": null,
+      "twitter": "https://twitter.com/wearenetflix",
+      "customLinks": [],
+      "corporateWebsite": "http://www.netflix.com"
+    },
+    "companyCeo": {
+      "name": "Ted Sarandos",
+      "photoUrl": null,
+      "startDate": null
+    },
+    "numOfCandidates": null,
+    "requirements": []
+  }
+]

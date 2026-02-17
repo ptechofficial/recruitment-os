@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional recruitment agency dashboard with live analytics and job search">
+    <title>Recruitment OS | Smart Hiring Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-mark">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" rx="8" fill="#da7756"/>
+                        <path d="M8 10h12M8 14h8M8 18h10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Recruitment OS</span>
+            </div>
+            <nav class="nav">
+                <span class="nav-item active">Dashboard</span>
+                <span class="nav-item">Search Jobs</span>
+                <span class="nav-item">Candidates</span>
+                <span class="nav-item">Outreach</span>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-refresh" id="refreshBtn" title="Refresh Data">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 8A6 6 0 1 1 8 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M8 2V5L11 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Live</span>
+                </div>
+                <div class="user-menu">
+                    <div class="user-avatar">
+                        <span>JD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Section 1: Job Scraping Request Form -->
+        <section class="form-section">
+            <div class="form-card glass-card">
+                <form id="scrapingForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="jobTitle" class="form-label">Job Title <span class="required">*</span></label>
+                            <input type="text" id="jobTitle" name="jobTitle" class="form-input"
+                                placeholder="e.g. Software Engineer" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Job Type</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="jobType" value="remote">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">Remote</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="jobType" value="onsite">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">Onsite</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" id="location" name="location" class="form-input"
+                                placeholder="e.g. New York">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="numJobs" class="form-label">Max Results <span
+                                    class="required">*</span></label>
+                            <input type="number" id="numJobs" name="numJobs" class="form-input" placeholder="e.g. 50"
+                                min="1" max="500" required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label class="form-label">Job Platform</label>
+                            <div class="checkbox-group platforms">
+                                <label class="checkbox-label platform-checkbox">
+                                    <input type="checkbox" name="platform" value="linkedin" id="platformLinkedIn">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">LinkedIn</span>
+                                </label>
+                                <label class="checkbox-label platform-checkbox">
+                                    <input type="checkbox" name="platform" value="indeed" id="platformIndeed">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">Indeed</span>
+                                </label>
+                                <label class="checkbox-label platform-checkbox">
+                                    <input type="checkbox" name="platform" value="glassdoor" id="platformGlassdoor">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">Glassdoor</span>
+                                </label>
+                                <label class="checkbox-label platform-checkbox">
+                                    <input type="checkbox" name="platform" value="linkedin_post"
+                                        id="platformLinkedInPost">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">LinkedIn Post</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width" id="linkedinKeywordsGroup" style="display: none;">
+                            <label for="linkedinKeywords" class="form-label">Job Searching Keywords <span
+                                    class="required">*</span></label>
+                            <input type="text" id="linkedinKeywords" name="linkedinKeywords" class="form-input"
+                                placeholder="e.g. hiring, looking for">
+                            <span class="form-hint">Required when LinkedIn Post is selected</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Company Size</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="companySize" value="SMALL">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">SMALL</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="companySize" value="MEDIUM">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">MEDIUM</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="companySize" value="LARGE">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">LARGE</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Salary Range</label>
+                            <div class="salary-range-group">
+                                <div class="salary-input-wrapper">
+                                    <span class="salary-prefix">$</span>
+                                    <input type="number" id="salaryMin" name="salaryMin" class="form-input salary-input"
+                                        placeholder="Min">
+                                </div>
+                                <span class="salary-separator">to</span>
+                                <div class="salary-input-wrapper">
+                                    <span class="salary-prefix">$</span>
+                                    <input type="number" id="salaryMax" name="salaryMax" class="form-input salary-input"
+                                        placeholder="Max">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary" id="submitBtn">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="8" cy="8" r="5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 12L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span class="btn-text">Search Jobs</span>
+                            <span class="btn-loader" style="display: none;">Searching...</span>
+                        </button>
+                        <button type="reset" class="btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+                <div id="formMessage" class="form-message" style="display: none;"></div>
+            </div>
+        </section>
+
+        <!-- Section 2: Live Analytics -->
+        <section class="analytics-section">
+
+            <!-- Metric Cards -->
+            <div class="analytics-grid" id="analyticsGrid"></div>
+
+            <!-- Charts Header with Date Range -->
+            <div class="charts-header">
+                <h2 class="charts-title">Analytics Overview</h2>
+                <div class="date-range-selector">
+                    <button class="date-btn" data-range="7">Last 7 days</button>
+                    <button class="date-btn active" data-range="30">Last 30 days</button>
+                    <button class="date-btn" data-range="90">Last 90 days</button>
+                    <button class="date-btn" data-range="all">All time</button>
+                </div>
+            </div>
+
+            <!-- Charts Grid -->
+            <div class="charts-grid">
+                <div class="chart-card glass-card">
+                    <h3>Top Hiring Companies</h3>
+                    <canvas id="companyChart"></canvas>
+                </div>
+                <div class="chart-card glass-card">
+                    <h3>Employment Types</h3>
+                    <canvas id="jobTypeChart"></canvas>
+                </div>
+                <div class="chart-card glass-card">
+                    <h3>Top Locations</h3>
+                    <canvas id="cityChart"></canvas>
+                </div>
+                <div class="chart-card glass-card">
+                    <h3>Match Score Distribution</h3>
+                    <canvas id="matchScoreChart"></canvas>
+                </div>
+                <div class="chart-card glass-card">
+                    <h3>Contact Availability</h3>
+                    <canvas id="outreachChart"></canvas>
+                </div>
+                <div class="chart-card glass-card">
+                    <h3>Roles Breakdown</h3>
+                    <canvas id="roleChart"></canvas>
+                </div>
+            </div>
+
+            <div id="analyticsError" class="error-state" style="display: none;">
+                <p>Failed to load analytics. <button class="btn-link" onclick="loadSheetData()">Retry</button></p>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <div class="section-header">
+                <h2 class="section-title">Job Listings</h2>
+                <div id="autoRefreshIndicator" class="auto-refresh-indicator" style="display: none;"></div>
+            </div>
+            <div class="table-card glass-card">
+                <div class="table-controls">
+                    <div class="table-controls-left">
+                        <!-- Sheet Toggle -->
+                        <div class="sheet-toggle" id="sheetToggle">
+                            <button class="toggle-btn active" data-sheet="current">Current Jobs</button>
+                            <button class="toggle-btn" data-sheet="all">All Jobs</button>
+                        </div>
+                        <span id="tableCount" class="record-count">0 records</span>
+                        <span id="selectedCount" class="selected-count" style="display: none;">0 selected</span>
+                    </div>
+                    <div class="table-controls-right">
+                        <div class="search-box">
+                            <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="7" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M10 10L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <input type="text" id="tableSearch" class="search-input" placeholder="Search jobs, companies...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions Bar -->
+                <div id="quickActions" class="quick-actions-bar" style="display: none;">
+                    <div class="quick-actions-info">
+                        <span id="quickActionsCount">0</span> items selected
+                    </div>
+                    <div class="quick-actions-buttons">
+                        <button class="btn-quick-action" id="bulkEmailBtn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="3" width="14" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M1 4L8 9L15 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            Send Outreach
+                        </button>
+                        <button class="btn-quick-action btn-quick-secondary" id="clearSelectionBtn">
+                            Clear Selection
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="data-table" id="dataTable">
+                        <thead>
+                            <tr>
+                                <th class="checkbox-col">
+                                    <label class="table-checkbox">
+                                        <input type="checkbox" id="selectAll">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </th>
+                                <th>Company</th>
+                                <th>Title</th>
+                                <th>Platform</th>
+                                <th>Type</th>
+                                <th>Location</th>
+                                <th>Work Model</th>
+                                <th>JD</th>
+                                <th>Job URL</th>
+                                <th>Salary</th>
+                                <th>Company Info</th>
+                                <th>Match</th>
+                                <th>Email</th>
+                                <th>Outreach</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+                <div id="emptyState" class="empty-state">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/>
+                        <path d="M24 28h16M24 36h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <h3>No Job Data Yet</h3>
+                    <p>Start a job search above to find matching opportunities. Results will appear here automatically.</p>
+                </div>
+                <div id="tableError" class="error-state" style="display: none;">
+                    <p>Failed to load data. <button class="btn-link" onclick="loadSheetData()">Retry</button></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Recruitment OS. All rights reserved.</p>
+    </footer>
+
+    <!-- Text View Modal -->
+    <div id="textModal" class="modal">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <div class="header-main">
+                    <h3 id="modalTitle">Full Text</h3>
+                    <span id="modalMeta" class="modal-meta"></span>
+                </div>
+                <div class="modal-header-actions">
+                    <button id="editBtn" class="btn-icon" title="Edit Content">Edit</button>
+                    <button class="modal-close" id="closeModal">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="modalBodyText" class="modal-body-text"></div>
+                <textarea id="modalEditText" class="modal-edit-text" style="display: none;"></textarea>
+            </div>
+            <div class="modal-footer" id="modalFooter" style="display: none;">
+                <div class="footer-actions">
+                    <button id="cancelBtn" class="btn-secondary btn-sm">Cancel</button>
+                    <button id="saveBtn" class="btn-primary btn-sm">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

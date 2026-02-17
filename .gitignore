@@ -1,0 +1,4 @@
+.DS_Store
+.idea/
+node_modules/
+recruitment-os/n8n-transforms/node n8n.json
