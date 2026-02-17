@@ -1,4 +1,24 @@
+# OS files
 .DS_Store
+Thumbs.db
+
+# IDE
 .idea/
+.vscode/
+*.iml
+
+# Claude Code
+.claude/
+
+# Dependencies
 node_modules/
-recruitment-os/n8n-transforms/node n8n.json
+
+# Environment
+.env
+.env.local
+
+# Archives
+*.zip
+
+# n8n internal
+site/n8n-transforms/node n8n.json
