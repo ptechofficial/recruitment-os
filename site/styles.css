@@ -144,6 +144,7 @@ body {
     transition: var(--transition);
     font-weight: 500;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .nav-item:hover {
@@ -1342,7 +1343,9 @@ body {
     }
 
     .nav {
-        display: none;
+        order: 3;
+        width: 100%;
+        justify-content: center;
     }
 
     .main-content {
