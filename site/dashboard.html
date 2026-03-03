@@ -27,9 +27,7 @@
             </div>
             <nav class="nav">
                 <span class="nav-item active">Dashboard</span>
-                <span class="nav-item">Search Jobs</span>
-                <span class="nav-item">Candidates</span>
-                <span class="nav-item">Outreach</span>
+                <span class="nav-item" id="navHiringSignals">Hiring Signals</span>
             </nav>
             <div class="header-actions">
                 <button class="btn-refresh" id="refreshBtn" title="Refresh Data">
@@ -320,6 +318,270 @@
                 </div>
             </div>
         </section>
+
+        <!-- Section 4: Hiring Signals (Hidden by default) -->
+        <section class="hiring-signals-section" id="hiringSignalsSection" style="display: none;">
+            <div class="section-header">
+                <h2 class="section-title">Hiring Signals</h2>
+                <div class="header-actions">
+                    <span id="hsRecordCount" class="record-count">0 signals</span>
+                    <button class="btn-refresh" id="hsRefreshBtn" title="Refresh Signals">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 8A6 6 0 1 1 8 2" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M8 2V5L11 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Job Change Detect Form -->
+            <div class="job-change-container glass-card mb-24">
+                <div class="job-change-header">
+                    <div class="header-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4v16m8-8H4" stroke="url(#paint0_linear)" stroke-width="2"
+                                stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="4" y1="12" x2="20" y2="12"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#da7756" />
+                                    <stop offset="1" stop-color="#e8956f" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="section-title">Job Change Detect</h3>
+                        <p class="section-subtitle">Track job changes and hiring signals from selected LinkedIn
+                            profiles.</p>
+                    </div>
+                </div>
+
+                <form id="jobChangeForm" class="job-change-form">
+                    <!-- 1. LinkedIn URLs -->
+                    <div class="form-section-group">
+                        <div class="label-row">
+                            <label class="form-label">LinkedIn Profile URLs <span class="required">*</span></label>
+                            <div class="label-actions">
+                                <button type="button" class="btn-text-action" id="bulkPasteBtn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z" fill="currentColor" />
+                                    </svg>
+                                    Bulk Paste
+                                </button>
+                            </div>
+                        </div>
+                        <div id="urlInputContainer" class="dynamic-input-container">
+                            <div class="input-row">
+                                <input type="text" class="form-input linkedin-url-input"
+                                    placeholder="https://www.linkedin.com/in/username/" required>
+                                <button type="button" class="btn-icon-remove" title="Remove" disabled>×</button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-add-row" id="addUrlBtn">+ Add URL</button>
+                    </div>
+
+                    <!-- 2. What to Watch For -->
+                    <div class="form-section-group">
+                        <label class="form-label">What to Watch For <span class="required">*</span></label>
+                        <div class="custom-select-wrapper">
+                            <div class="custom-select" id="signalSelect">
+                                <div class="selected-tags" id="signalTags">
+                                    <span class="tag" data-value="job_change">job_change <span
+                                            class="remove-tag">×</span></span>
+                                </div>
+                                <div class="select-arrow">▼</div>
+                            </div>
+                            <div class="select-dropdown" id="signalDropdown">
+                                <div class="dropdown-option selected" data-value="job_change">job_change</div>
+                                <div class="dropdown-option" data-value="promotion">promotion</div>
+                                <div class="dropdown-option" data-value="company_change">company_change</div>
+                                <div class="dropdown-option" data-value="open_to_work">open_to_work</div>
+                            </div>
+                        </div>
+                        <input type="hidden" id="signalInput" name="signals" value="job_change">
+                    </div>
+
+                    <!-- 3. Email Recipients -->
+                    <div class="form-section-group">
+                        <label class="form-label">Email Recipients <span class="required">*</span></label>
+                        <div id="emailInputContainer" class="dynamic-input-container">
+                            <div class="input-row">
+                                <input type="email" class="form-input email-input" placeholder="recipient@example.com"
+                                    required>
+                                <button type="button" class="btn-icon-remove" title="Remove" disabled>×</button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-add-row" id="addEmailBtn">+ Add Email</button>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="form-footer">
+                        <button type="submit" class="btn-primary btn-submit" id="jobChangeSubmitBtn" disabled>
+                            <span class="btn-text">Start Tracking</span>
+                            <span class="btn-loader" style="display: none;"></span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Result Container -->
+                <div id="jobChangeResult" class="job-change-result" style="display: none;">
+                    <div class="result-header">
+                        <h4>Tracking Started Successfully</h4>
+                        <span class="timestamp" id="resultTimestamp"></span>
+                        <p class="result-subtext"
+                            style="color: var(--text-secondary); margin-top: 8px; font-size: 14px;">You will receive
+                            email notifications when changes are detected based on your configured signals.</p>
+                    </div>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <span class="metric-label">Profiles Processed</span>
+                            <span class="metric-value" id="resProfiles">0</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">Changes Detected</span>
+                            <span class="metric-value" id="resChanges">0</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">Run ID</span>
+                            <span class="metric-value-sm" id="resRunId">-</span>
+                        </div>
+                    </div>
+                    <div id="resErrorContainer" class="error-list" style="display: none;">
+                        <h5>Errors:</h5>
+                        <ul id="resErrorList"></ul>
+                    </div>
+                    <button class="btn-secondary btn-sm" id="resetFormBtn">Track More Profiles</button>
+                </div>
+            </div>
+
+            <!-- Bulk Paste Modal -->
+            <div id="bulkPasteModal" class="modal">
+                <div class="modal-content glass-card">
+                    <div class="modal-header">
+                        <h3>Bulk Paste URLs</h3>
+                        <button class="modal-close" id="closeBulkPaste">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-instruction">Paste multiple LinkedIn URLs separated by new lines or commas.</p>
+                        <textarea id="bulkPasteArea" class="modal-edit-text"
+                            placeholder="https://www.linkedin.com/in/user1&#10;https://www.linkedin.com/in/user2"></textarea>
+                        <div class="char-counter"><span id="urlCount">0</span> URLs found</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-secondary" id="cancelBulkPaste">Cancel</button>
+                        <button class="btn-primary" id="confirmBulkPaste">Add URLs</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hiring Signals Stat Cards -->
+            <div class="hs-stats-row">
+                <div class="hs-stat-card hs-stat-card--news loading" data-filter="news" id="hsCard-news">
+                    <div class="hs-stat-top">
+                        <div class="hs-stat-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
+                                <path d="M18 14h-8" />
+                                <path d="M15 18h-5" />
+                                <path d="M10 6h8v4h-8Z" />
+                            </svg>
+                        </div>
+                        <span class="hs-stat-trend hs-stat-trend--neutral" id="hsStatNewsTrend">—</span>
+                    </div>
+                    <div class="hs-stat-number" id="hsStatNews">–</div>
+                    <div class="hs-stat-label">Recent News</div>
+                </div>
+                <div class="hs-stat-card hs-stat-card--funded loading" data-filter="funded" id="hsCard-funded">
+                    <div class="hs-stat-top">
+                        <div class="hs-stat-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
+                                <path d="M12 18V6" />
+                            </svg>
+                        </div>
+                        <span class="hs-stat-trend hs-stat-trend--neutral" id="hsStatFundedTrend">—</span>
+                    </div>
+                    <div class="hs-stat-number" id="hsStatFunded">–</div>
+                    <div class="hs-stat-label">Funded Startups</div>
+                </div>
+                <div class="hs-stat-card hs-stat-card--jobchange loading" data-filter="jobchange" id="hsCard-jobchange">
+                    <div class="hs-stat-top">
+                        <div class="hs-stat-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                            </svg>
+                        </div>
+                        <span class="hs-stat-trend hs-stat-trend--neutral" id="hsStatJobChangeTrend">—</span>
+                    </div>
+                    <div class="hs-stat-number" id="hsStatJobChange">–</div>
+                    <div class="hs-stat-label">Job Changes</div>
+                </div>
+                <div class="hs-stat-card hs-stat-card--total loading" data-filter="all" id="hsCard-total">
+                    <div class="hs-stat-top">
+                        <div class="hs-stat-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#da7756"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10" />
+                                <line x1="12" y1="20" x2="12" y2="4" />
+                                <line x1="6" y1="20" x2="6" y2="14" />
+                            </svg>
+                        </div>
+                        <span class="hs-stat-trend hs-stat-trend--up" id="hsStatTotalTrend">Live</span>
+                    </div>
+                    <div class="hs-stat-number" id="hsStatTotal">–</div>
+                    <div class="hs-stat-label">Total Signals</div>
+                </div>
+            </div>
+
+            <div class="table-card glass-card">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Company Name</th>
+                                <th>Website</th>
+                                <th>Funding Amount</th>
+                                <th>Funding Date</th>
+                                <th>Size</th>
+                                <th>Industry</th>
+                                <th>Description</th>
+                                <th>Decision Maker</th>
+                                <th>Contact Email</th>
+                                <th>Company LinkedIn</th>
+                                <th>Recent News</th>
+                                <th>Outreach Message</th>
+                                <th>Hiring Score</th>
+                                <th>Impact Level</th>
+                                <th>Impact Type</th>
+                                <th>Senior Team</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hsTableBody" class="hs-table-body">
+                        </tbody>
+                    </table>
+
+                    <div id="hsEmptyState" class="hs-empty-state" style="display: none;">
+                        <div class="empty-icon">📭</div>
+                        <p>No hiring signals found</p>
+                        <button class="btn-primary" onclick="HiringSignalEngine.loadData()">Refresh Data</button>
+                    </div>
+
+                    <div id="hsError" class="hs-error" style="display: none;">
+                        <p>Failed to load signals. <button class="btn-link" onclick="HiringSignalEngine.loadData()">Retry</button></p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -352,7 +614,51 @@
         </div>
     </div>
 
+    <!-- Hiring Signals Modal -->
+    <div id="hsTextModal" class="hs-modal">
+        <div class="hs-modal-content glass-card">
+            <div class="hs-modal-header">
+                <h3 id="hsTextModalTitle">Details</h3>
+                <button class="modal-close" id="hsTextModalClose">&times;</button>
+            </div>
+            <div class="hs-modal-body" id="hsTextModalBody"></div>
+            <div class="hs-modal-footer" id="hsTextModalFooter" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="app.js"></script>
+    <script src="hiring-signals.js"></script>
+    <script src="job-change-detect.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Hiring Signals
+            if (typeof HiringSignalEngine !== 'undefined') {
+                HiringSignalEngine.init();
+            }
+
+            // Tab Switching Logic
+            const navItems = document.querySelectorAll('.nav-item');
+            const dashboardSections = document.querySelectorAll('.form-section, .analytics-section, .table-section');
+            const hiringSignalsSection = document.getElementById('hiringSignalsSection');
+            const navHiringSignals = document.getElementById('navHiringSignals');
+
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    navItems.forEach(nav => nav.classList.remove('active'));
+                    item.classList.add('active');
+
+                    if (item === navHiringSignals) {
+                        dashboardSections.forEach(el => el.style.display = 'none');
+                        hiringSignalsSection.style.display = 'block';
+                    } else if (item.textContent.trim() === 'Dashboard') {
+                        dashboardSections.forEach(el => el.style.display = 'block');
+                        hiringSignalsSection.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
