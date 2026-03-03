@@ -9,9 +9,9 @@
     // ============================================================
     //  CONFIGURATION — Replace these with your actual IDs
     // ============================================================
-    var POSTHOG_KEY = 'YOUR_POSTHOG_PROJECT_API_KEY';   // Get from: PostHog → Settings → Project API Key
-    var POSTHOG_HOST = 'https://us.i.posthog.com';       // or https://eu.i.posthog.com for EU
-    var CLARITY_ID = 'YOUR_CLARITY_PROJECT_ID';           // Get from: clarity.microsoft.com → Settings → Project ID
+    var POSTHOG_KEY = 'phc_yXmQPukdSzpYRJe73mkqwbr4ELIChIZv2UUGKIUSh8g';
+    var POSTHOG_HOST = 'https://us.i.posthog.com';
+    var CLARITY_ID = 'vq588xh5u8';
 
     var isConfigured = {
         posthog: POSTHOG_KEY !== 'YOUR_POSTHOG_PROJECT_API_KEY',
