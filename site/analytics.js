@@ -1,6 +1,6 @@
 /* ========================================
    RECRUITMENT OS — ANALYTICS ENGINE
-   PostHog + Microsoft Clarity + Custom Events
+   PostHog + Microsoft Clarity + GA4 + Custom Events
    ======================================== */
 
 (function () {
@@ -12,10 +12,12 @@
     var POSTHOG_KEY = 'phc_yXmQPukdSzpYRJe73mkqwbr4ELIChIZv2UUGKIUSh8g';
     var POSTHOG_HOST = 'https://us.i.posthog.com';
     var CLARITY_ID = 'vq588xh5u8';
+    var GA4_ID = 'G-JFXT234RE4';
 
     var isConfigured = {
         posthog: POSTHOG_KEY !== 'YOUR_POSTHOG_PROJECT_API_KEY',
-        clarity: CLARITY_ID !== 'YOUR_CLARITY_PROJECT_ID'
+        clarity: CLARITY_ID !== 'YOUR_CLARITY_PROJECT_ID',
+        ga4: GA4_ID !== 'YOUR_GA4_MEASUREMENT_ID'
     };
 
     // ============================================================
@@ -49,6 +51,21 @@
     }
 
     // ============================================================
+    //  GOOGLE ANALYTICS 4 INIT
+    // ============================================================
+    if (isConfigured.ga4) {
+        var gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID;
+        document.head.appendChild(gtagScript);
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { dataLayer.push(arguments); };
+        gtag('js', new Date());
+        gtag('config', GA4_ID);
+    }
+
+    // ============================================================
     //  UNIFIED EVENT TRACKER
     // ============================================================
     function track(eventName, properties) {
@@ -64,6 +81,11 @@
         // Clarity custom tags
         if (isConfigured.clarity && window.clarity) {
             clarity('set', eventName, JSON.stringify(props));
+        }
+
+        // Google Analytics 4
+        if (isConfigured.ga4 && window.gtag) {
+            gtag('event', eventName, props);
         }
     }
 
