@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>GTM Plan | Recruitment OS — Internal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        :root {
+            --primary: #da7756;
+            --primary-light: #e8956f;
+            --primary-dark: #c4654a;
+            --primary-subtle: rgba(218, 119, 86, 0.08);
+            --bg-primary: #ffffff;
+            --bg-secondary: #faf9f7;
+            --bg-tertiary: #f5f4f2;
+            --bg-hover: #f0efed;
+            --text-primary: #0d0d0d;
+            --text-secondary: #666666;
+            --text-muted: #999999;
+            --border-color: #e5e5e5;
+            --border-light: #ebebeb;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --radius-sm: 8px;
+            --radius: 12px;
+            --radius-lg: 16px;
+            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: var(--font-family);
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            font-size: 15px;
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 24px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-mark {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--text-primary);
+        }
+
+        .back-link {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: var(--radius-sm);
+            transition: all 0.15s ease;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+            background: var(--primary-subtle);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            background: var(--primary-subtle);
+            color: var(--primary-dark);
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 20px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        .badge-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        /* Content */
+        .content {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        /* Markdown Styles */
+        .markdown-body h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .markdown-body h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 48px;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-subtle);
+            color: var(--text-primary);
+        }
+
+        .markdown-body h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .markdown-body p {
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .markdown-body em:first-child {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .markdown-body strong {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .markdown-body hr {
+            border: none;
+            height: 1px;
+            background: var(--border-color);
+            margin: 40px 0;
+        }
+
+        .markdown-body blockquote {
+            margin: 16px 0;
+            padding: 16px 20px;
+            background: var(--primary-subtle);
+            border-left: 3px solid var(--primary);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            color: var(--text-primary);
+            font-size: 14.5px;
+            line-height: 1.7;
+        }
+
+        .markdown-body blockquote p {
+            margin-bottom: 0;
+        }
+
+        .markdown-body blockquote strong {
+            color: var(--primary-dark);
+        }
+
+        /* Tables */
+        .markdown-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+            background: var(--bg-primary);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+
+        .markdown-body thead {
+            background: var(--bg-tertiary);
+        }
+
+        .markdown-body th {
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .markdown-body td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+
+        .markdown-body tr:last-child td {
+            border-bottom: none;
+        }
+
+        .markdown-body tr:hover td {
+            background: var(--bg-secondary);
+        }
+
+        /* Lists */
+        .markdown-body ul, .markdown-body ol {
+            margin: 12px 0 16px;
+            padding-left: 24px;
+        }
+
+        .markdown-body li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+
+        .markdown-body li ul, .markdown-body li ol {
+            margin-top: 6px;
+            margin-bottom: 0;
+        }
+
+        /* Checkboxes */
+        .markdown-body input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            vertical-align: middle;
+            margin-right: 8px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .markdown-body input[type="checkbox"]:checked {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .markdown-body input[type="checkbox"]:checked::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 1px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
+        /* Code */
+        .markdown-body code {
+            background: var(--bg-tertiary);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-family: 'SF Mono', Menlo, Monaco, monospace;
+            color: var(--primary-dark);
+        }
+
+        /* Loading state */
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 80px 24px;
+            color: var(--text-secondary);
+        }
+
+        .spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid var(--border-color);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .error-msg {
+            text-align: center;
+            padding: 60px 24px;
+            color: var(--text-secondary);
+        }
+
+        .error-msg h2 {
+            border: none;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header { padding: 0 16px; }
+            .content { padding: 24px 16px 60px; }
+            .markdown-body h1 { font-size: 26px; }
+            .markdown-body h2 { font-size: 19px; }
+            .markdown-body table { font-size: 13px; }
+            .markdown-body th, .markdown-body td { padding: 10px 12px; }
+            .badge { display: none; }
+        }
+
+        @media (max-width: 480px) {
+            .markdown-body table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <a class="logo" href="../dashboard.html">
+                    <div class="logo-mark">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="28" height="28" rx="8" fill="#da7756"/>
+                            <path d="M8 10h12M8 14h8M8 18h10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">Recruitment OS</span>
+                </a>
+                <a class="back-link" href="../dashboard.html">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Dashboard
+                </a>
+            </div>
+            <span class="badge">
+                <span class="badge-dot"></span>
+                Internal
+            </span>
+        </div>
+    </header>
+
+    <main class="content">
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <span>Loading GTM Plan...</span>
+        </div>
+        <article id="markdown-body" class="markdown-body" style="display: none;"></article>
+        <div id="error" class="error-msg" style="display: none;">
+            <h2>Could not load GTM Plan</h2>
+            <p>Make sure gtm-plan.md exists in this directory.</p>
+        </div>
+    </main>
+
+    <script>
+        async function loadGTMPlan() {
+            const loading = document.getElementById('loading');
+            const body = document.getElementById('markdown-body');
+            const error = document.getElementById('error');
+
+            try {
+                const response = await fetch('gtm-plan.md');
+                if (!response.ok) throw new Error('Failed to fetch');
+
+                const markdown = await response.text();
+                body.innerHTML = marked.parse(markdown);
+                loading.style.display = 'none';
+                body.style.display = 'block';
+            } catch (e) {
+                loading.style.display = 'none';
+                error.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadGTMPlan);
+    </script>
+</body>
+
+</html>
