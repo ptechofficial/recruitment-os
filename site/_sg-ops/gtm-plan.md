@@ -1,160 +1,146 @@
 # Recruitment OS — GTM Starting Plan
 
-*Applied: PACE + 6-Step GTM + GTM Engineering frameworks from `_skills/gtm-engineering/`*
+**Status:** Pre-revenue. 2-4 systems built. 1 informal case study. No active pipeline.
+**Goal:** Get 5-10 discovery calls in 2 weeks. Close 1 paid pilot in 30 days.
 
 ---
 
-## PACE Analysis for Recruitment OS
+## What We're Actually Selling (Be Honest)
 
-### P — Pain (Positioning Lever)
+We don't have all 9 systems ready. Don't sell "the full suite" yet.
 
-Reframe around the **most urgent, expensive pain** — not features:
+**Sell what's built:**
+- Lead with the 2-4 systems that work today
+- Package as "AI recruitment pilot" — $2,500 for 30 days, one system
+- If they want more, scope it as a custom project, not a catalog
 
-> **Primary pain frame:** "Your recruiters spend 3-4 hours/day on sourcing and admin. At $50/hr across 20 recruiters, that's **$60K/month bleeding out** on work an AI system handles in minutes."
+**The German case study:**
+- Use freely but don't name the client (no formal approval yet)
+- Say "a European recruitment agency" — the numbers are real, the story is real
+- Get formal permission from that client ASAP — this is your #1 sales asset
 
-> **Competitive fear frame:** "Your competitors are scanning 40,000 opportunities/day while your team manually checks 200. By the time you find a job opening, someone else already placed the candidate."
-
-Competitive fear is the strongest B2B motivator — 80% buy to avoid pain, not gain upside.
-
-### A — Audience (Where to Focus First)
-
-| Filter | Best Segment |
-|--------|-------------|
-| **Pain** | Agencies with 15-50 recruiters — big enough to feel scaling pain, small enough that AI transformation is tractable |
-| **Money** | $2M-$10M revenue agencies already paying for Bullhorn/Vincere ($15-50K/yr on tools) |
-| **Expensive COI** | IT/Technical recruitment agencies — tech talent war means late sourcing = lost placements worth $15-30K each |
-
-**Starting ICP (laser-focused):**
-> IT/Technical recruitment agencies, 15-50 recruiters, $2M-$10M revenue, UK-based, using Bullhorn or Vincere, actively posting jobs on LinkedIn
-
-Why UK first: timezone overlap with India, English-speaking, strong recruitment industry, smaller market to dominate before US.
-
-### C — Channel
-
-| Channel | Role | Weekly Effort |
-|---------|------|---------------|
-| **LinkedIn Outbound** | Primary acquisition — 50 targeted connections/week to ICP | 60% |
-| **LinkedIn Content** | Authority building — 3 posts/week (case study angles, pain agitation, before/after) | 25% |
-| **YouTube** | Long-term compounding asset — 1 video/week (searchable "recruitment AI" terms) | 15% |
-
-**Skip for now:** Cold email, paid ads, communities. First 3-5 customers need high-touch, relationship-based selling. Paid ads come after messaging is validated through real conversations.
-
-### E — Expansion (Built into the Offer)
-
-- **Land:** $2,500 pilot (30 days, one system) — dead simple to say yes to
-- **Expand:** Prove ROI → upsell to $7K/month full suite
-- **Golden equation check:** If pilot costs ~$1K to deliver and converts to $7K/month, CAC pays back in month 1
+**Team claim:**
+- Don't lead with "25-person team" — it overpromises and raises questions
+- Say "dedicated implementation team" — vague enough to be true, specific enough to build confidence
+- Lead with results, not team size
 
 ---
 
-## 6-Step Strategy Applied
+## Test the Market This Week (Days 1-7)
 
-### Step 1 — Target Market
-IT/Technical recruitment agencies in UK, 15-50 recruiters
+Don't build lists. Don't write frameworks. Start conversations.
 
-### Step 2 — Segmentation
-Start with agencies using Bullhorn (largest ATS in UK recruitment). This makes integration pitch specific and case study transferable.
+### Outreach (LinkedIn, free tier is fine to start)
 
-### Step 3 — Positioning
+- [ ] Identify 30 recruitment agency founders/CEOs on LinkedIn manually
+  - Search: "recruitment agency founder", "staffing agency CEO", "recruitment director"
+  - Mix of UK, US, Europe — don't narrow geography yet, you need data first
+  - 10-50 recruiters, any specialization
+- [ ] Send 30 connection requests with ONE message:
+  > "Hi [Name], I recently helped a recruitment agency automate their sourcing — went from 200 manual searches/day to 40,000. Doubled revenue in 90 days. I think there's something similar we could do for [Agency]. Worth connecting?"
+- [ ] Follow up on every acceptance within 24 hours:
+  > "Thanks for connecting. Quick question — how is your team currently handling sourcing? Mostly manual or using any automation?"
+- [ ] Goal: 5-10 responses, 2-3 calls booked by end of week
 
-| Competitor Type | Their Weakness | Our Advantage |
-|-----------------|---------------|---------------|
-| Generic AI tools (ChatGPT, etc.) | DIY, no integration, no workflow | Done-for-you, 25-person team |
-| Point solutions (HireEZ, SeekOut) | One function, self-serve, $500-2K/mo | 9 integrated systems, proven 2x result |
-| Offshore VAs | Quality inconsistent, no AI layer | AI + human team, scalable, data-driven |
-| Big consultancies (Deloitte, etc.) | $200K+, 6-12 months, enterprise only | $2.5K to start, 60-90 days, mid-market focused |
+### Content (LinkedIn, 3 posts this week)
 
-**White space:** Nobody is doing **done-for-you AI implementation specifically for mid-market recruitment agencies at the $2.5K-$7K price point.**
+- [ ] Post 1: The numbers story — "A recruitment agency went from 200 to 40,000 daily searches. Here's what happened to their revenue." (short, punchy, end with question)
+- [ ] Post 2: Pain agitation — "Your recruiters spend 3-4 hours/day on sourcing. That's $X/month in labor on work AI handles in minutes." (do the math for different agency sizes)
+- [ ] Post 3: Before/after — "What a recruiter's day looks like before and after AI automation" (simple comparison, no hype)
 
-### Step 4 — Manifesto
+### One Critical Task
 
-> "Recruitment agencies are drowning in manual work while AI tools sit on the shelf because nobody has time to figure them out. We're the 25-person team that builds, integrates, and runs AI systems inside your agency — so your recruiters stop sourcing and start closing. We proved it works: 2x revenue in 90 days for a German agency. Now we're bringing it to UK tech recruiters."
-
-### Step 5 — Broadway Show (Channels)
-LinkedIn Outbound + LinkedIn Content + YouTube (see Channel table above). Master these three before adding anything else.
-
-### Step 6 — Data & Iteration
-Track weekly metrics (see table below). Every Friday: review numbers, adjust messaging, double down on what converts.
+- [ ] Contact the German client. Ask for: (a) permission to use them as a named case study, (b) a testimonial quote, (c) 1-2 referral introductions. This single task is worth more than 100 cold outreach messages.
 
 ---
 
-## Concrete 30-Day Execution Plan
+## Weeks 2-3: Run Discovery Calls, Learn What Resonates
 
-### Week 1 — Build the List + Sharpen the Weapon
+### Outreach Continues
 
-- [ ] Build a list of 200 UK IT/tech recruitment agencies (15-50 recruiters, Bullhorn users). Use LinkedIn Sales Navigator + Google + Bullhorn's customer directory
-- [ ] Identify the founder/CEO/MD + Head of Operations at each
-- [ ] Write 5 connection request variations (pain-first, not pitch-first):
-  - *"Noticed [agency] is growing the tech recruitment team — curious how you're handling the sourcing volume at that scale?"*
-- [ ] Write 3 LinkedIn posts: (1) German case study retold with numbers, (2) "200 vs 40,000 searches/day" contrast post, (3) "The real cost of manual sourcing" breakdown
-- [ ] Refine Cal.com booking page for this specific ICP
+- [ ] Send 10 connection requests per day (50/week)
+- [ ] Engage on 5 recruitment industry posts per day (comment with substance, not "great post")
+- [ ] Post 2-3x per week on LinkedIn
+- [ ] Move every warm conversation toward a call:
+  > "Happy to show you what we built — 20 min, no pitch. If it's not relevant, no worries."
 
-### Week 2 — Start Outreach
+### On Discovery Calls — Learn, Don't Sell
 
-- [ ] Send 50 connection requests (10/day, Mon-Fri)
-- [ ] Publish first 2 LinkedIn posts
-- [ ] Engage (comment meaningfully) on 10 posts/day from recruitment agency founders
-- [ ] Follow up on accepted connections with value-first message (share an insight, not a pitch)
-- [ ] Record 1 YouTube video: "How one recruitment agency doubled revenue with AI in 90 days"
+You're testing product-market fit, not closing. On each call, find out:
+- [ ] What's their #1 bottleneck? (sourcing? admin? pipeline visibility?)
+- [ ] What tools do they already use? (ATS, CRM, scraping tools)
+- [ ] Have they tried AI/automation before? What happened?
+- [ ] Would they pay $2,500 for a 30-day pilot to solve [their specific pain]?
+- [ ] Document every call: what they said, what resonated, what didn't
 
-### Week 3 — Conversations → Calls
+### After Each Call
 
-- [ ] Send 50 more connection requests
-- [ ] Publish 2 more LinkedIn posts
-- [ ] Move warm conversations toward discovery calls: *"Happy to show you what the dashboard looks like for an agency your size — worth a 20 min look?"*
-- [ ] Target: 3-5 discovery calls booked
-- [ ] For each call: use the Straight Line system from `_skills/sales/` — build certainty in the Three 10s
+- [ ] Send a 1-paragraph follow-up: "Here's what I heard, here's what we'd do, here's what it costs"
+- [ ] No fancy proposals yet — a clear email is faster and more honest than a 10-page PDF
 
-### Week 4 — Close Pilots
+### Target by End of Week 3
 
-- [ ] Continue outreach cadence (50 connections + 2 posts)
-- [ ] Run discovery calls, send custom proposals
-- [ ] Push for $2,500 pilot closes — use objection handling from `docs/gtm-strategy.md`
-- [ ] **Target: 1-2 signed pilots**
-- [ ] Document everything: what messages got replies, what objections came up, what converted
+- 8-10 discovery calls completed
+- Clear pattern on which pain point resonates most
+- 2-3 prospects actively interested in a pilot
+- You know which of your systems maps to the most common pain
 
 ---
 
-## Weekly Metrics to Track
+## Week 4: Close a Pilot
+
+### For Interested Prospects
+
+- [ ] Send a simple 1-page proposal (not a deck): problem → what we do → timeline → price → next step
+- [ ] Offer: $2,500 pilot, 30 days, one system, specific deliverable
+- [ ] Make it dead simple to say yes: "We start Monday, you'll see first results in 2 weeks"
+- [ ] If they hesitate on price: offer a case study deal — reduced rate in exchange for named testimonial + results data
+
+### If Nobody Wants to Pay
+
+That's a signal. Before panicking:
+- [ ] Review call notes — was the pain real but the offer wrong? Or was the pain not urgent enough?
+- [ ] Consider: are you talking to the right people? (founders vs. ops vs. recruiters)
+- [ ] Consider: is the entry price too high? Test $1,500 or even a free 2-week proof-of-concept for the first client
+- [ ] Consider: do they need to SEE a demo? Build a quick Loom walkthrough of the working system
+
+---
+
+## What NOT to Do
+
+- **Don't build a list of 200+ agencies before talking to anyone.** You learn nothing from a spreadsheet. Talk to 30 people first.
+- **Don't buy Sales Navigator yet.** Free LinkedIn is enough for 30-50 manual searches. Buy it when you've validated the ICP and need volume.
+- **Don't write 5 outreach variations.** Write 1. Send it 30 times. See what happens. Iterate based on real data.
+- **Don't build n8n automation agents for GTM.** You haven't manually done 50 conversations yet. Automate after you know what works.
+- **Don't create a pitch deck, ROI calculator, or lead magnet.** You need conversations, not collateral. The case study story told in 3 sentences beats any PDF.
+- **Don't narrow your ICP to "UK IT/tech agencies using Bullhorn, 15-50 recruiters."** That's premature optimization. You have zero customers. Talk to any recruitment agency that'll listen and let the data tell you who's buying.
+
+---
+
+## Track These Numbers (Weekly)
 
 | Metric | Week 1 | Week 2 | Week 3 | Week 4 |
 |--------|--------|--------|--------|--------|
-| Connections sent | 0 | 50 | 100 | 150 |
-| Connections accepted | 0 | 15-20 | 30-40 | 45-60 |
-| Conversations started | 0 | 5-8 | 10-15 | 15-20 |
-| Discovery calls | 0 | 0-1 | 3-5 | 5-8 |
-| Proposals sent | 0 | 0 | 1-2 | 3-5 |
-| **Pilots signed** | 0 | 0 | 0 | **1-2** |
+| Connection requests sent | 30 | 50 | 50 | 50 |
+| Replies / conversations | 5-10 | 8-12 | 8-12 | 5-8 |
+| Discovery calls | 2-3 | 3-4 | 3-4 | 2-3 |
+| Pilots proposed | 0 | 0 | 1-2 | 2-3 |
+| **Pilots signed** | 0 | 0 | 0 | **1** |
+
+If you're sending messages and getting <10% reply rate after 2 weeks, the message is wrong. Rewrite it.
+If you're getting replies but no calls, the value prop is unclear. Sharpen it.
+If you're getting calls but no pilots, the offer is wrong. Change the price, scope, or risk structure.
 
 ---
 
-## GTM Engineering — Build After First 2 Customers
+## After First Paying Client
 
-Once you have paying customers, build these agents with n8n:
+Only after someone pays you:
+1. Document everything — before/after metrics, timeline, what you actually delivered
+2. Get a testimonial and case study permission
+3. Now narrow your ICP based on who actually bought and why
+4. Now build outreach templates based on what actually worked in conversations
+5. Now consider Sales Navigator, cold email sequences, content scaling
+6. Now think about the other 5-7 systems and packaging the "full suite"
 
-1. **Lead Scoring Agent** — scrapes LinkedIn for agencies matching ICP criteria, scores them, pushes hot leads to a Google Sheet
-2. **Outreach Personalization Agent** — takes a prospect's LinkedIn profile + agency website, generates a custom connection message
-3. **Deal Intelligence Agent** — after a discovery call (Fathom transcript), auto-generates the proposal using template + call insights
-
-Don't automate before you've manually done 50+ conversations and know what works.
-
----
-
-## The Core GTM Asset: The German Case Study
-
-Every post, every message, every call should orbit around: *"We doubled a recruitment agency's revenue in 90 days."*
-
-10 ways to tell the story:
-
-1. **The numbers version** — 200 → 40,000 daily searches
-2. **The human version** — recruiters got their evenings back
-3. **The competitive version** — they reached clients weeks before competitors
-4. **The financial version** — $60K/month in manual labor eliminated
-5. **The timeline version** — results in 90 days, not 12 months
-6. **The scale version** — same team, 200x more coverage
-7. **The risk version** — $2,500 pilot to prove it, not $200K consulting engagement
-8. **The before/after version** — side-by-side daily workflow comparison
-9. **The industry version** — "If a German agency can do it, why can't UK agencies?"
-10. **The future version** — "This is what recruitment looks like in 2027. Some agencies are already there."
-
-One case study, told well, beats a hundred feature descriptions.
+The goal isn't a perfect GTM strategy. The goal is 1 paying customer who proves this works.
