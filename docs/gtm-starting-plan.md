@@ -1,146 +1,111 @@
-# Recruitment OS — GTM Starting Plan
+# Recruitment OS — GTM Todo List
 
-**Status:** Pre-revenue. 2-4 systems built. 1 informal case study. No active pipeline.
-**Goal:** Get 5-10 discovery calls in 2 weeks. Close 1 paid pilot in 30 days.
-
----
-
-## What We're Actually Selling (Be Honest)
-
-We don't have all 9 systems ready. Don't sell "the full suite" yet.
-
-**Sell what's built:**
-- Lead with the 2-4 systems that work today
-- Package as "AI recruitment pilot" — $2,500 for 30 days, one system
-- If they want more, scope it as a custom project, not a catalog
-
-**The German case study:**
-- Use freely but don't name the client (no formal approval yet)
-- Say "a European recruitment agency" — the numbers are real, the story is real
-- Get formal permission from that client ASAP — this is your #1 sales asset
-
-**Team claim:**
-- Don't lead with "25-person team" — it overpromises and raises questions
-- Say "dedicated implementation team" — vague enough to be true, specific enough to build confidence
-- Lead with results, not team size
+**Where we are:** Pre-revenue. 2-4 systems built. 1 informal case study. No pipeline.
+**Where we need to be:** 2-3 paying clients.
 
 ---
 
-## Test the Market This Week (Days 1-7)
+## Lock Down the Offer
 
-Don't build lists. Don't write frameworks. Start conversations.
+- [ ] List exactly which systems are built and deliverable today
+- [ ] Define the pilot offer: $2,500 / 30 days / 1 system / specific deliverable
+- [ ] Write a 1-paragraph description of what the client gets, in plain English — no jargon, no "9 systems", no "AI-powered suite"
+- [ ] Stop saying "25-person team" — say "dedicated implementation team" and lead with results instead
+- [ ] Decide: if someone says yes tomorrow, can you deliver? If not, fix that first
 
-### Outreach (LinkedIn, free tier is fine to start)
+---
 
-- [ ] Identify 30 recruitment agency founders/CEOs on LinkedIn manually
-  - Search: "recruitment agency founder", "staffing agency CEO", "recruitment director"
-  - Mix of UK, US, Europe — don't narrow geography yet, you need data first
-  - 10-50 recruiters, any specialization
-- [ ] Send 30 connection requests with ONE message:
+## Lock Down the Case Study
+
+- [ ] Contact the German client — ask for formal permission to use them as a named case study
+- [ ] Ask for a 2-3 sentence testimonial quote
+- [ ] Ask for 1-2 referral introductions to other agency owners they know
+- [ ] If they say no to naming: use "a European recruitment agency" with the real numbers (200 → 40,000 searches, 2x revenue, 90 days)
+- [ ] Write the case study as 3 sentences you can drop into any message or post — not a PDF
+
+---
+
+## Find Prospects
+
+- [ ] Search LinkedIn manually for 30 recruitment agency founders/CEOs/MDs
+  - Search terms: "recruitment agency founder", "staffing CEO", "recruitment director"
+  - Any geography, any specialization — don't narrow before you have data
+  - 10-50 recruiters (big enough to have pain, small enough to buy from you)
+- [ ] For each, note: name, agency name, size, specialization, anything specific about their agency you can reference
+
+---
+
+## Start Conversations
+
+- [ ] Send connection requests with ONE message (don't write 5 variations):
   > "Hi [Name], I recently helped a recruitment agency automate their sourcing — went from 200 manual searches/day to 40,000. Doubled revenue in 90 days. I think there's something similar we could do for [Agency]. Worth connecting?"
-- [ ] Follow up on every acceptance within 24 hours:
+- [ ] Follow up every accepted connection within 24 hours:
   > "Thanks for connecting. Quick question — how is your team currently handling sourcing? Mostly manual or using any automation?"
-- [ ] Goal: 5-10 responses, 2-3 calls booked by end of week
-
-### Content (LinkedIn, 3 posts this week)
-
-- [ ] Post 1: The numbers story — "A recruitment agency went from 200 to 40,000 daily searches. Here's what happened to their revenue." (short, punchy, end with question)
-- [ ] Post 2: Pain agitation — "Your recruiters spend 3-4 hours/day on sourcing. That's $X/month in labor on work AI handles in minutes." (do the math for different agency sizes)
-- [ ] Post 3: Before/after — "What a recruiter's day looks like before and after AI automation" (simple comparison, no hype)
-
-### One Critical Task
-
-- [ ] Contact the German client. Ask for: (a) permission to use them as a named case study, (b) a testimonial quote, (c) 1-2 referral introductions. This single task is worth more than 100 cold outreach messages.
+- [ ] Keep sending 10 requests/day until you have 10+ active conversations
+- [ ] Engage on 5 recruitment industry posts per day — real comments, not "great post"
 
 ---
 
-## Weeks 2-3: Run Discovery Calls, Learn What Resonates
+## Post on LinkedIn
 
-### Outreach Continues
+- [ ] Post the numbers story: "A recruitment agency went from 200 to 40,000 daily searches. Here's what happened to their revenue."
+- [ ] Post the pain math: "Your recruiters spend 3-4 hours/day on sourcing. At $50/hr across 20 recruiters, that's $60K/month on work AI handles in minutes."
+- [ ] Post the before/after: "What a recruiter's day looks like before and after AI automation"
+- [ ] Keep posting 2-3x per week — every post should relate back to the case study or the pain
 
-- [ ] Send 10 connection requests per day (50/week)
-- [ ] Engage on 5 recruitment industry posts per day (comment with substance, not "great post")
-- [ ] Post 2-3x per week on LinkedIn
+---
+
+## Get on Calls
+
 - [ ] Move every warm conversation toward a call:
   > "Happy to show you what we built — 20 min, no pitch. If it's not relevant, no worries."
-
-### On Discovery Calls — Learn, Don't Sell
-
-You're testing product-market fit, not closing. On each call, find out:
-- [ ] What's their #1 bottleneck? (sourcing? admin? pipeline visibility?)
-- [ ] What tools do they already use? (ATS, CRM, scraping tools)
-- [ ] Have they tried AI/automation before? What happened?
-- [ ] Would they pay $2,500 for a 30-day pilot to solve [their specific pain]?
+- [ ] On each call, learn — don't sell:
+  - What's their #1 bottleneck?
+  - What tools do they already use?
+  - Have they tried AI/automation before? What happened?
+  - Would they pay $2,500 to solve this?
 - [ ] Document every call: what they said, what resonated, what didn't
-
-### After Each Call
-
-- [ ] Send a 1-paragraph follow-up: "Here's what I heard, here's what we'd do, here's what it costs"
-- [ ] No fancy proposals yet — a clear email is faster and more honest than a 10-page PDF
-
-### Target by End of Week 3
-
-- 8-10 discovery calls completed
-- Clear pattern on which pain point resonates most
-- 2-3 prospects actively interested in a pilot
-- You know which of your systems maps to the most common pain
+- [ ] Target: 10+ discovery calls total
 
 ---
 
-## Week 4: Close a Pilot
+## Close Pilots
 
-### For Interested Prospects
-
-- [ ] Send a simple 1-page proposal (not a deck): problem → what we do → timeline → price → next step
-- [ ] Offer: $2,500 pilot, 30 days, one system, specific deliverable
-- [ ] Make it dead simple to say yes: "We start Monday, you'll see first results in 2 weeks"
-- [ ] If they hesitate on price: offer a case study deal — reduced rate in exchange for named testimonial + results data
-
-### If Nobody Wants to Pay
-
-That's a signal. Before panicking:
-- [ ] Review call notes — was the pain real but the offer wrong? Or was the pain not urgent enough?
-- [ ] Consider: are you talking to the right people? (founders vs. ops vs. recruiters)
-- [ ] Consider: is the entry price too high? Test $1,500 or even a free 2-week proof-of-concept for the first client
-- [ ] Consider: do they need to SEE a demo? Build a quick Loom walkthrough of the working system
+- [ ] After each good call, send a 1-paragraph follow-up email: "Here's what I heard, here's what we'd do, here's what it costs"
+- [ ] For serious prospects, send a simple 1-page proposal: problem → what we do → timeline → price → next step
+- [ ] Offer: $2,500 pilot, 30 days, one system, specific outcome
+- [ ] If they hesitate on price: offer reduced rate in exchange for named case study + testimonial
+- [ ] If they hesitate on risk: "We start Monday, first results in 2 weeks. If it's not working, we stop."
+- [ ] Target: 2-3 signed pilots
 
 ---
 
-## What NOT to Do
+## If It's Not Working — Diagnose
 
-- **Don't build a list of 200+ agencies before talking to anyone.** You learn nothing from a spreadsheet. Talk to 30 people first.
-- **Don't buy Sales Navigator yet.** Free LinkedIn is enough for 30-50 manual searches. Buy it when you've validated the ICP and need volume.
-- **Don't write 5 outreach variations.** Write 1. Send it 30 times. See what happens. Iterate based on real data.
-- **Don't build n8n automation agents for GTM.** You haven't manually done 50 conversations yet. Automate after you know what works.
-- **Don't create a pitch deck, ROI calculator, or lead magnet.** You need conversations, not collateral. The case study story told in 3 sentences beats any PDF.
-- **Don't narrow your ICP to "UK IT/tech agencies using Bullhorn, 15-50 recruiters."** That's premature optimization. You have zero customers. Talk to any recruitment agency that'll listen and let the data tell you who's buying.
-
----
-
-## Track These Numbers (Weekly)
-
-| Metric | Week 1 | Week 2 | Week 3 | Week 4 |
-|--------|--------|--------|--------|--------|
-| Connection requests sent | 30 | 50 | 50 | 50 |
-| Replies / conversations | 5-10 | 8-12 | 8-12 | 5-8 |
-| Discovery calls | 2-3 | 3-4 | 3-4 | 2-3 |
-| Pilots proposed | 0 | 0 | 1-2 | 2-3 |
-| **Pilots signed** | 0 | 0 | 0 | **1** |
-
-If you're sending messages and getting <10% reply rate after 2 weeks, the message is wrong. Rewrite it.
-If you're getting replies but no calls, the value prop is unclear. Sharpen it.
-If you're getting calls but no pilots, the offer is wrong. Change the price, scope, or risk structure.
+- **No replies to messages?** The message is wrong. Rewrite it.
+- **Replies but no calls?** The value prop is unclear. Sharpen the pitch.
+- **Calls but no pilots?** The offer is wrong. Change the price, scope, or risk structure.
+- **Wrong people responding?** Adjust who you're targeting.
+- **Need a demo?** Record a 3-min Loom walkthrough of the working system.
 
 ---
 
-## After First Paying Client
+## Don't Do These Yet
 
-Only after someone pays you:
-1. Document everything — before/after metrics, timeline, what you actually delivered
-2. Get a testimonial and case study permission
-3. Now narrow your ICP based on who actually bought and why
-4. Now build outreach templates based on what actually worked in conversations
-5. Now consider Sales Navigator, cold email sequences, content scaling
-6. Now think about the other 5-7 systems and packaging the "full suite"
+- Don't buy Sales Navigator — free LinkedIn is enough for 30-50 searches
+- Don't build a 200-name spreadsheet before talking to anyone
+- Don't write 5 outreach variations — write 1, send it 30 times, iterate
+- Don't build n8n automation agents for GTM — automate after you know what works manually
+- Don't create pitch decks, ROI calculators, or lead magnets — conversations beat collateral
+- Don't narrow ICP prematurely — let the data tell you who buys
 
-The goal isn't a perfect GTM strategy. The goal is 1 paying customer who proves this works.
+---
+
+## After 2-3 Clients Are Paying
+
+1. Document before/after metrics for each client
+2. Get testimonials and case study permissions
+3. Now narrow ICP based on who actually bought and why
+4. Now build outreach templates based on what actually converted
+5. Now consider Sales Navigator, cold email, content scaling, paid ads
+6. Now package the remaining systems into a full suite offer
